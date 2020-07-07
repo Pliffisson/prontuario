@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuario - Cadastrar Paciente</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create-client.css">
+
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+    <script src="/scripts/create-client.js" defer></script>
+</head>
+<body>
+    <div id="page-create-client">
+
+            <header>
+                <img src="/assets/logo.svg" width="50px" alt="logo">
+                <a href="index.html">
+                    <span></span>
+                    Voltar para home
+                  </a>
+            </header>
+
+            <form action="">
+
+                <h1>Cadastro do cliente</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados do cliente:</h2>
+                    </legend>
+                    <div class="field">
+                        <label for="name">Nome do paciente</label>
+                        <input type="text" name="name">
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address">Endereço</label>
+                            <input type="text" name="address">
+                        </div>
+                        <div class="field">
+                            <label for="address2">Número/Complemento</label>
+                            <input type="text" name="address2">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="cellphone">Telefone</label>
+                            <input type="text" name="cellphone">
+                        </div>
+                        <div class="field">
+                            <label for="cellphone2">Contato para emergência</label>
+                            <input type="text" name="cellphone2">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- <fieldset>
+                    <legend>
+                        <h2>Tipo de procedimento:</h2>
+                    </legend>
+                </fieldset> -->
+
+                <button type="submit">Cadastrar paciênte</button>
+            </form>
+              
+  
+    </div> 
+</body>
+</html>
