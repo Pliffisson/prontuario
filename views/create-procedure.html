@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuario - Cadastrar Paciente</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create.css">
+
+    <link rel="stylesheet" href="/styles/responsive.css">
+
+    <script src="/scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="page-create-patient">
+
+            <header>
+                <img src="/assets/logo.svg" width="50px" alt="logo">
+                <a href="index.html">
+                    <span></span>
+                    Voltar para home
+                  </a>
+            </header>
+
+            <form action="">
+
+                <h1>Novo procedimento</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Tipo de procedimento</h2>
+                    </legend>
+
+                    <div class="items-grid">
+                        <li data-id="1">
+                            <img src="/assets/avaliacao.svg" alt="avaliacao" width="60">
+                            <span>Avaliação</span>
+                        </li>
+
+                        <li data-id="2">
+                            <img src="/assets/limpeza.svg" alt="limpeza" width="60">
+                            <span>Limpeza</span>
+                        </li>
+
+                        <li data-id="3">
+                            <img src="/assets/restauracao.svg" alt="restauracao" width="60">
+                            <span>Restauração</span>
+                        </li>
+
+                        <li data-id="4">
+                            <img src="/assets/ortondotia.svg" alt="ortondotia" width="60">
+                            <span>Ortondotia</span>
+                        </li>
+
+                        <li data-id="5">
+                            <img src="/assets/implante.svg" alt="implante" width="60">
+                            <span>Implante</span>
+                        </li>
+
+                        <li data-id="6">
+                            <img src="/assets/outros.svg" alt="outros" width="60">
+                            <span>Outros</span>
+                        </li>
+                    </div>
+
+                    <input type="hidden" name="items">
+
+                </fieldset>
+
+                <fieldset>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="obs">Observações</label>
+                            <textarea name="obs"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="date">Data</label>
+                            <input type="date" name="date">
+                        </div>
+                        <div class="field">
+                            <label for="price">Valor</label>
+                            <input type="text" name="price">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Registrar procedimento</button>
+            </form>
+              
+  
+    </div> 
+</body>
+</html>

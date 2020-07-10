@@ -6,14 +6,12 @@
     <title>Prontuario - Cadastrar Paciente</title>
 
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/create-client.css">
+    <link rel="stylesheet" href="/styles/create.css">
 
     <link rel="stylesheet" href="/styles/responsive.css">
-
-    <script src="/scripts/create-client.js" defer></script>
 </head>
 <body>
-    <div id="page-create-client">
+    <div id="page-create-patient">
 
             <header>
                 <img src="/assets/logo.svg" width="50px" alt="logo">
@@ -57,15 +55,23 @@
                             <input type="text" name="cellphone2">
                         </div>
                     </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="date">Data de nascimento</label>
+                            <input type="date" name="date">
+                        </div>
+                        <div class="field">
+                            <label for="allergy">Alergia a medicamento</label>
+                            <select name="allergy" id="allergy">
+                                <option value="0">Sim</option>
+                                <option value="1">Não</option>
+                            </select>
+                        </div>
+                    </div>
                 </fieldset>
-
-                <!-- <fieldset>
-                    <legend>
-                        <h2>Tipo de procedimento:</h2>
-                    </legend>
-                </fieldset> -->
-
-                <button type="submit">Cadastrar paciênte</button>
+               
+                <button type="submit">Cadastrar paciente</button>
             </form>
               
   
