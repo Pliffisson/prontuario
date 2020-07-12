@@ -1,0 +1,68 @@
+#page-search-result {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-search-result header {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search-result header a {
+    color: var(--color-three);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-search-result header a span {
+    background-image: url('/assets/arrow.svg');
+
+    margin-right: 8px;
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    margin-top: 48px;
+}
+
+main h4 {
+    font-weight: 400;
+    margin-bottom: 32px;   
+}
+
+main .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 16px;
+    padding: 6px;
+
+    border-radius: 6px;
+    
+    background-color: var(--color-two);
+    transition: 400ms;
+
+    cursor: pointer;
+}
+
+main .info:hover {
+    background-color: var(--color-four);
+}
+
+main h3 {
+    font-weight: inherit;
+}
+

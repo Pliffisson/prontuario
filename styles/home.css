@@ -65,3 +65,84 @@
 #page-home main a:hover {
     background-color: var(--color-four);
 }
+
+
+/* MODAL */
+#modal {
+    background-color: #0077B6dd;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal .content {
+    color: white;
+
+    width: 420px;
+
+    position: relative;
+}
+
+#modal .content a {
+    background-image: url("/assets/x.svg");
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+
+    font-size: 0.01px;
+
+    margin-bottom: 6px;
+
+    position: absolute;
+    right: 0;
+    top: -24px;
+}
+
+#modal form .field {
+    display: flex;
+}
+
+#modal form input {
+    flex: 1;
+
+    background-color: #f0f0f5;
+
+    border-radius: 0 8px 8px 0;
+    border: 0;
+
+    padding: 8px 14px;
+
+    font-size: 16px;
+    color: var(--color-four);
+}
+
+#modal form button {
+    width: 62px;
+    height: 62px;
+
+    background-color: var(--color-three);
+
+    border: 0;
+    border-radius: 8px 0 0 8px;
+
+    transition: 400ms;
+}
+
+#modal form button:hover {
+    background-color: var(--color-five);
+}
+
+#modal.hide {
+    display: none;
+}
