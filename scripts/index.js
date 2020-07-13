@@ -9,5 +9,3 @@ buttonSearch.addEventListener("click", () => {
 close.addEventListener("click", () => {
     modal.classList.add("hide")
 })
-
-
