@@ -33,7 +33,7 @@
 }
 
 form {
-    background-color: var(--color-one);
+    background-color: var(--color-two);
 
     margin: 80px auto;
     padding: 64px;
@@ -46,7 +46,7 @@ form {
 form h1 {
     font-size: 36px;
 
-    color: var(--color-three);
+    color: var(--color-four);
 }
 
 form fieldset {
@@ -54,7 +54,7 @@ form fieldset {
 
     border: 0;
 
-    color: var(--color-three);
+    color: var(--color-four);
 }
 
 form legend {
@@ -130,7 +130,7 @@ form button {
     font-weight: bold;
     font-size: 16px;
 
-    border: none;
+    border: solid 2px white;
 
     margin-top: 40px;
 
@@ -151,7 +151,7 @@ form button:hover {
     background-color: var(--color-six);
     list-style: none;
 
-    border: 2px solid var(--color-three);
+    border: 2px solid var(--color-four);
     border-radius: 8px;
 
     height: 160px;
@@ -175,7 +175,8 @@ form button:hover {
 
     display: flex;
     align-items: center;
-    color: var(--color-three);
+    font-weight: 500;
+    color: var(--color-four);
 }
 
 .items-grid li.selected {

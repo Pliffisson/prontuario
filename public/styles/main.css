@@ -37,7 +37,9 @@ header {
 header a {
     display: flex;
 
-    color: var(--color-four);
+    font-weight: 600;
+
+    color: var(--color-three);
 }
 
 header a span {
