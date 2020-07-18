@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% set bodyId = "page-search-result" %}
+
+{% block title %}
+    <title>Prontuario - Resultado de Pesquisa</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-result.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/scripts/search-result.js" defer></script>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <img src="/assets/logo.svg" width="50px" alt="logo">
+        <a href="/">
+            <span></span>
+            Voltar para home
+            </a>
+    </header>
+
+    <main>
+        <h4>
+            <strong>3 pacientes</strong> encontrados
+        </h4>
+
+        <div class="results">
+            <div class="info">
+                <h3>Rodrigo de Almeida Barbosa</h3>
+                <p>CPF: 000.000.000-00</p>
+            </div>
+
+            <div class="info">
+                <h3>Rodrigo de Almeida Barbosa</h3>
+                <p>CPF: 000.000.000-00</p>
+            </div>
+
+            <div class="info">
+                <h3>Rodrigo de Almeida Barbosa</h3>
+                <p>CPF: 000.000.000-00</p>
+            </div>
+        </div>
+    </main>      
+{% endblock %}

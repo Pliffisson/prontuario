@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "layout.njk" %}
+
+{% set bodyId = "page-patient" %}
+
+{% block title %}
     <title>Prontuario - Paciente</title>
+{% endblock %}
 
-    <link rel="stylesheet" href="/styles/main.css">
+{% block styles %}
     <link rel="stylesheet" href="/styles/patient.css">
+{% endblock %}
 
-    <link rel="stylesheet" href="/styles/responsive.css">
-</head>
-<body>
-<div id="page-patient">
-
+{% block content %}
+<div class="content">
     <header>
         <img src="/assets/logo.svg" width="50px" alt="logo">
         <a href="/">
             <span></span>
             Voltar para home
-            </a>
+        </a>
     </header>
 
     <main>
@@ -34,10 +33,11 @@
             <p></p>
             <p>Alergia: Não</p>
         </div>
-        
+
         <div class="procedures">
             <div class="btn">
-                <a href="/create-procedure"><span></span>Novo procedimento</a>
+                <a href="/create-procedure">
+                    <span></span>Novo procedimento</a>
             </div>
 
             <div class="procedure">
@@ -47,15 +47,16 @@
                 </div>
                 <div class="info">
                     <div class="group-info">
-                        <h4>Data: </h4>
+                        <h4>Data:
+                        </h4>
                         <p>24/02/2000</p>
                         <h4>Valor:</h4>
                         <p>R$ 100,00</p>
                     </div>
                     <div class="group-info">
                         <h4>Observações:</h4>
-                        <p> É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-                        utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
+                        <p>
+                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
                     </div>
                 </div>
             </div>
@@ -66,18 +67,19 @@
                 </div>
                 <div class="info">
                     <div class="group-info">
-                        <h4>Data: </h4>
+                        <h4>Data:
+                        </h4>
                         <p>24/02/2000</p>
                         <h4>Valor:</h4>
                         <p>R$ 100,00</p>
                     </div>
                     <div class="group-info">
                         <h4>Observações:</h4>
-                        <p> É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-                        utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
+                        <p>
+                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
                     </div>
                 </div>
-            </div>   
+            </div>
             <div class="procedure">
                 <div class="type">
                     <img src="/assets/restauracao.svg" alt="restauracao" width="60">
@@ -85,21 +87,20 @@
                 </div>
                 <div class="info">
                     <div class="group-info">
-                        <h4>Data: </h4>
+                        <h4>Data:
+                        </h4>
                         <p>24/02/2000</p>
                         <h4>Valor:</h4>
                         <p>R$ 100,00</p>
                     </div>
                     <div class="group-info">
                         <h4>Observações:</h4>
-                        <p> É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-                        utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
+                        <p>
+                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
-    </main>     
-
-</div> 
-</body>
-</html>
+    </main>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+
+{% set bodyId = "page-home" %}
+
+{% block title %}
+    <title>Prontuario - Home</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/scripts/index.js" defer></script>
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <header>
+        <img src="/assets/logo.svg" width="50px" alt="logo">
+        <a href="/create-patient">
+            <span></span>
+            Cadastre um paciente
+            </a>
+    </header>
+
+    <main>
+        <div> 
+            <h2>Sua ferramenta de prontuários</h2>
+            <p>Ajudamos você dentista a organizar suas fichas.</p>
+
+            <a href="#">Pesquisar paciente</a>
+
+        </div>   
+    </main>
+        
+</div>   
+
+{% endblock %}
+
+{% block modal %}
+<div id="modal" class="hide">
+    <div class="content">
+        <form action="/search-result">
+            <a href="#">Fechar</a>
+            <label for="search"></label>
+            <div class="search field">         
+                <button>
+                    <img src="/assets/search.svg" alt="Buscar">
+                </button>
+                <input type="text" name="search" placeholder="Pesquise por paciente">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

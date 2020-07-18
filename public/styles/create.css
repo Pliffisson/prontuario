@@ -1,11 +1,11 @@
-#page-create-patient {
+#page-create {
     width: 90%;
     max-width: 1100px;
 
     margin: 0 auto;
 }
 
-#page-create-patient header {
+#page-create header {
     margin-top: 48px;
 
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-#page-create-patient header a {
+#page-create header a {
     color: var(--color-three);
     font-weight: bold;
 
@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-#page-create-patient header a span {
+#page-create header a span {
     background-image: url('/assets/arrow.svg');
 
     margin-right: 8px;

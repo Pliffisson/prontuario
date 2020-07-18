@@ -1,0 +1,93 @@
+{% extends "layout.njk" %}
+
+{% set bodyId = "page-create" %}
+
+{% block title %}
+<title>Prontuario - Novo Procedimento</title>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/create.css">
+{% endblock %}
+
+{% block script %}
+<script src="/scripts/script.js" defer></script>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <img src="/assets/logo.svg" width="50px" alt="logo">
+        <a href="/">
+            <span></span>
+            Voltar para home
+        </a>
+    </header>
+
+    <form action="/patient">
+
+        <h1>Novo procedimento</h1>
+
+        <fieldset>
+            <legend>
+                <h2>Tipo de procedimento</h2>
+            </legend>
+
+            <div class="items-grid">
+                <li data-id="1">
+                    <img src="/assets/avaliacao.svg" alt="avaliacao" width="60">
+                    <span>Avaliação</span>
+                </li>
+
+                <li data-id="2">
+                    <img src="/assets/limpeza.svg" alt="limpeza" width="60">
+                    <span>Limpeza</span>
+                </li>
+
+                <li data-id="3">
+                    <img src="/assets/restauracao.svg" alt="restauracao" width="60">
+                    <span>Restauração</span>
+                </li>
+
+                <li data-id="4">
+                    <img src="/assets/ortondotia.svg" alt="ortondotia" width="60">
+                    <span>Ortondotia</span>
+                </li>
+
+                <li data-id="5">
+                    <img src="/assets/implante.svg" alt="implante" width="60">
+                    <span>Implante</span>
+                </li>
+
+                <li data-id="6">
+                    <img src="/assets/outros.svg" alt="outros" width="60">
+                    <span>Outros</span>
+                </li>
+            </div>
+
+            <input type="hidden" name="cards">
+
+        </fieldset>
+
+        <fieldset>
+            <div class="field-group">
+                <div class="field">
+                    <label for="obs">Observações</label>
+                    <textarea name="obs"></textarea>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="date">Data</label>
+                    <input type="date" name="date">
+                </div>
+                <div class="field">
+                    <label for="price">Valor</label>
+                    <input type="text" name="price">
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Registrar procedimento</button>
+    </form>
+{% endblock %}

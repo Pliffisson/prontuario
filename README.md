@@ -14,4 +14,4 @@ Criar uma aplicação web que dê praticidade, agilidade e segurança para quem 
 
  ## 🎥 Preview:
 
-<img src="assets/preview.gif" >
+<img src="public/assets/preview.gif">

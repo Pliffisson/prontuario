@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Prontuario</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="/styles/main.css">
+    {% block styles %}{% endblock %}
+
+    <link rel="stylesheet" href="/styles/responsive.css">
+    {% block script %}{% endblock %}
+</head>
+<body>
+
+    <div id="{{ bodyId }}">
+       {% block content %}
+       {% endblock %}
+    </div> 
+
+    {% block modal %}{% endblock modal %}
+
+</body>
+</html>
