@@ -29,20 +29,14 @@
         </h4>
 
         <div class="results">
-            <div class="info">
-                <h3>Rodrigo de Almeida Barbosa</h3>
-                <p>CPF: 000.000.000-00</p>
-            </div>
 
-            <div class="info">
-                <h3>Rodrigo de Almeida Barbosa</h3>
-                <p>CPF: 000.000.000-00</p>
+            {% for patient in patients %}
+            <div id="{{ patient.id }}" class="info">
+                <h3>{{ patient.name }}</h3>
+                <p>CPF: {{ patient.cpf }}</p>
             </div>
+            {% endfor %}
 
-            <div class="info">
-                <h3>Rodrigo de Almeida Barbosa</h3>
-                <p>CPF: 000.000.000-00</p>
-            </div>
         </div>
     </main>      
 {% endblock %}

@@ -23,15 +23,15 @@
     <main>
 
         <div class="info-patient">
-            <h2>Rodrigo de Almeida Barbosa</h2>
-            <p>CPF: 000.000.000-00</p>
-            <p>RG: 00.000.000-0</p>
-            <p>Endereço: Planalto Luxemburgo 5</p>
-            <p>Telefone: (92) 99999-9999</p>
-            <p>Contato para Emergência: (92) 99999-9999</p>
+            <h2>{{ patient.name }}</h2>
+            <p>CPF: {{ patient.cpf }}</p>
+            <p>RG: {{ patient.rg }}</p>
+            <p>Endereço: {{ patient.address }}</p>
+            <p>Telefone: {{ patient.cellphone }}</p>
+            <p>Contato para Emergência: {{ patient.emergency }}</p>
             <p>Data de Nascimento:</p>
-            <p></p>
-            <p>Alergia: Não</p>
+            <p>{{ patient.age }}</p>
+            <p>Alergia: {{ patient.allergy }}</p>
         </div>
 
         <div class="procedures">
@@ -43,60 +43,22 @@
             <div class="procedure">
                 <div class="type">
                     <img src="/assets/restauracao.svg" alt="restauracao" width="60">
-                    <span>Restauração</span>
+                    {% for details in patient.procedures %}
+                        <span>{{ details.type }}</span>
+                        {% endfor %}
                 </div>
                 <div class="info">
                     <div class="group-info">
-                        <h4>Data:
-                        </h4>
-                        <p>24/02/2000</p>
+                        <h4>Data:</h4>
+                        {% for details in patient.procedures %}
+                        <p>{{ details.date }}</p>
+                        {% endfor %}
                         <h4>Valor:</h4>
-                        <p>R$ 100,00</p>
+                        <p></p>
                     </div>
                     <div class="group-info">
                         <h4>Observações:</h4>
-                        <p>
-                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="procedure">
-                <div class="type">
-                    <img src="/assets/restauracao.svg" alt="restauracao" width="60">
-                    <span>Restauração</span>
-                </div>
-                <div class="info">
-                    <div class="group-info">
-                        <h4>Data:
-                        </h4>
-                        <p>24/02/2000</p>
-                        <h4>Valor:</h4>
-                        <p>R$ 100,00</p>
-                    </div>
-                    <div class="group-info">
-                        <h4>Observações:</h4>
-                        <p>
-                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="procedure">
-                <div class="type">
-                    <img src="/assets/restauracao.svg" alt="restauracao" width="60">
-                    <span>Restauração</span>
-                </div>
-                <div class="info">
-                    <div class="group-info">
-                        <h4>Data:
-                        </h4>
-                        <p>24/02/2000</p>
-                        <h4>Valor:</h4>
-                        <p>R$ 100,00</p>
-                    </div>
-                    <div class="group-info">
-                        <h4>Observações:</h4>
-                        <p>
-                            É simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
