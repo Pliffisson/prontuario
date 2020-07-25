@@ -1,26 +1,26 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block title %}
-    <title>Prontuario</title>
-    {% endblock %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block title %}
+            <title>Prontuario</title>
+        {% endblock %}
 
-    <link rel="stylesheet" href="/styles/main.css">
-    {% block styles %}{% endblock %}
+        <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/main.css">
+        {% block styles %}{% endblock %}
 
-    <link rel="stylesheet" href="/styles/responsive.css">
-    {% block script %}{% endblock %}
-</head>
-<body>
+        <link rel="stylesheet" href="/styles/responsive.css">
+        {% block script %}{% endblock %}
+    </head>
+    <body>
 
-    <div id="{{ bodyId }}">
-       {% block content %}
-       {% endblock %}
-    </div> 
+        <div id="{{ bodyId }}">
+            {% block content %}{% endblock %}
+        </div>
 
-    {% block modal %}{% endblock modal %}
+        {% block modal %}{% endblock modal %}
 
-</body>
+    </body>
 </html>
